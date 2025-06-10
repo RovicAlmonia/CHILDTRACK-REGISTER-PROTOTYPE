@@ -1,0 +1,145 @@
+/* ====== Global Styling ====== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #001f3f; /* USTP Navy */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* ====== Container Card ====== */
+.container {
+  background-color: #012c57; /* Slightly lighter navy */
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-left: 8px solid #ffcc00;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ====== Headings ====== */
+h2,
+.text-yellow {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #ffcc00 !important; /* USTP Mustard Yellow */
+  text-align: center;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ffffffcc;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* ====== Form Labels ====== */
+.form-label {
+  color: #ffcc00;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* ====== Inputs and Selects ====== */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  border: 2px solid #ffcc00;
+  color: #001f3f;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+  outline: none;
+}
+
+/* ====== Button Styles ====== */
+.btn {
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+  background-color: #2ecc71;
+  border: none;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #27ae60;
+}
+
+.btn-outline-primary {
+  border: 2px solid #ffcc00;
+  background-color: transparent;
+  color: #ffcc00;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffcc00;
+  color: #001f3f;
+}
+
+/* ====== QR Code Section ====== */
+.qr-section {
+  margin-top: 40px;
+  text-align: center;
+  border-top: 2px dashed #ffcc00;
+  padding-top: 30px;
+}
+
+.qr-section svg {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 6px solid #ffcc00;
+  border-radius: 20px;
+}
+
+/* ====== Button Group for QR and Dashboard ====== */
+.qr-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ====== Text Yellow Utility ====== */
+.text-yellow {
+  color: #ffcc00 !important;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
